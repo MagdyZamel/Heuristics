@@ -33,7 +33,7 @@ a {
 a:focus, 
 a:hover {
     text-decoration: none;
-    color: #827382;
+    color: #fff;
 }
 
 .img_res{
@@ -251,6 +251,11 @@ a:hover {
     font-size: 2.5em;
     line-height: 1.6;
 }
+@media( min-width: 250px ){
+    .logo{
+    font-size: 30px;
+    }
+}
 #logo_menu {
     padding: 5px 0px;
 }
@@ -267,7 +272,8 @@ a:hover {
 .store-btn-container {
     padding-top: 15px;
 }
-.store-btn:hover,#menu-toggle:hover {
+.store-btn:hover,
+#menu-toggle:hover {
     background: #817382;
     border-color: #817382;
     color: #fff;
@@ -316,6 +322,7 @@ a:hover {
 }
 .iphone-hand {
     padding: 20px 30px 0px 30px;
+    height: 100%;
 }
 .store:hover{
     background: #827382;
@@ -451,7 +458,7 @@ a:hover {
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 5%;
+    
 }
 
 .mu-download-area .polo-btn{
@@ -476,125 +483,170 @@ a:hover {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////// 
-//  12 - Contact us Section
-/////////////////////////////////////////////////////////////////////*/
-
-
-.address {
-    width: 30%;
-    float: left;
-    background: url(../img/gmap-bg.jpg);
-    height: 640px;
-}
-.mailbox {
-    width: 70%;
-    float: left;
-    background-image: url(../img/map-image.png);
-    background-color: #222;
-    padding-bottom: 111px;
-    height: 640px;
-}
-.address .container {
-    max-width: 100%;
-}
-.mailbox .container {
-    max-width: 90%;
-}
-.address-list {
-    list-style: none;
-    padding: 160px 0px 70px 0px;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    display: table;
-}
-.address-list li {
-    font-size: 22px;
-    padding: 0.5em 0;
-    color: #fff;
-    font-weight: 100;
-}
-.address-list li i {
-    display: table-cell;
-    background-color: blue;
-    line-height: 1.8;
-    width: 81px;
-    height: 70px;
-    text-align: center;
-    font-size: 45px;
-    border-radius: 50%;
-    margin: 0;
-    vertical-align: middle;
-}
-.address-list li span {
-    padding: 0px 0px 0px 20px;
-    display: table-cell;
-    vertical-align: middle;
-}
-.mailbox .container {
-    margin-top: 225px;
-    margin-bottom: 0px;
-}
-#contactForm input,#contactForm textarea {
-    border-radius: 0px;
-    box-shadow: none;
-    border: 2px solid #C2C2C2;
-    font-size: 18px;
-}
-#contactForm input:active,#contactForm textarea:active,#contactForm input:hover,#contactForm textarea:hover {
-    border: 2px solid #00ceb8;
-}
-
-#contactForm #name, #contactForm #email, #contactForm #phone {
-    padding: 20px;
-    height: auto;
-}
-#contactForm .form-group {
-    margin-bottom: 25px;
-}
-#contactForm #message {
-    height: 258px;
-    padding-bottom: 40px;
-}
-.contact-submit {
-    margin: 0 auto;
-    margin-top: -38px;
-    width: 160px;
-    background: #fff;
-    color: #00ceb8;
-    border: 2px solid #00ceb8;
-    font-size: 46px;
-    padding: 0;
-    margin: 0 auto;
-    margin-top: -46px;
-}
-.contact-submit:hover {
-    background: #00ceb8;
-    color: #fff;
-}
-#contact {
+/* Contact Section
+--------------------------------*/
+#contact{
+    background: url("../img/bbb.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 40px 0;
     position: relative;
-}
-.contact-wrap {
-    position: absolute;
-    z-index: 9999;
     color: #fff;
+    padding-top: 20px;
+    
+}
+
+
+#contact::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0, 0, 0.7);
+    z-index: 0;
+}
+#contact .container{
+    position: relative;
+    z-index: 1;
+}
+#contact .block-title{
+    top:50px;
+    margin-bottom: 60px;
+}
+#contact2 .section-header {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+#contact2 .contact-info i {
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #827382;
+}
+
+#contact2 .contact-info address, #contact2.contact-info p {
+    margin-bottom: 0;
+    color: #000;
+}
+
+#contact2 .contact-info a {
+    color: #000;
+}
+
+#contact2 .contact-info a:hover {
+    color: #827382;
+}
+
+#contact2 .contact-address, #contact2 .contact-phone, #contact2 .contact-email {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    #contact2 .contact-address, #contact2 .contact-phone, #contact2 .contact-email {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact2 .contact-phone {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+#contact2 .form #sendmessage,  #modal-window-container .form #sendapplication{
+    color: #827382;
+    border: 1px solid #827382;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact2 .form #errormessage, #modal-window-container .form #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact2 .form #sendmessage.show, #contact2 .form #errormessage.show, #contact2 .form .show
+, #modal-window-container .form #errormessage.show ,#modal-window-container .form #sendapplication.show {
+    display: block;
+}
+
+#contact2 .form .validation {
+    color: red;
+    display: none;
+    font-weight: 400;
+    font-size: 13px;
+}
+#contact2 .form input{
+    height: 100%;
     width: 100%;
-    top: 50px;
+    cursor:text;
 }
 
-#contact .block-title span {
-    border-color: #fff;
+#contact2 .form input,
+#contact2 .form textarea {
+    padding: 10px 14px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #6ecba9;
-}
-input:-moz-placeholder, textarea:-moz-placeholder {
-  color: #6ecba9;
+#contact2 .form button[type="submit"] {
+    background: #827382;
+    border: 0;
+    padding: 20px 70px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 50px;
 }
 
+#contact2 .form button[type="submit"]:hover {
+    background: #827382;
+    color: #000;
+}
+#contact2 .form button[type="submit"]:active,
+#contact2 .form button[type="submit"]:visited,
+#contact2 .form button[type="submit"]:focus{
+    border: none;
+}
+#contact2 .form  input {
+    background-image: url("../img/User-512.png");
+    background-repeat: no-repeat;
+    background-position: 15px 16px;
+    background-size: 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #dfe2e2;
+    margin-bottom: 10px;
+    padding: 17px 50px;
+}
+#contact2 .form input:visited{
+    background-color: sandybrown;
+}
+#contact2 .form  textarea {
+    background-image: url("../img/icon.msg.png");
+    background-repeat: no-repeat;
+    background-position: 15px 16px;
+    background-size: 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #dfe2e2;
+    margin-bottom: 30px;
+    padding: 17px 50px;
+}
 
 /* ///////////////////////////////////////////////////////////////////// 
 //  13 - Footer Section

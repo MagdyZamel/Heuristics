@@ -251,11 +251,6 @@ a:hover {
     font-size: 2.5em;
     line-height: 1.6;
 }
-@media( min-width: 250px ){
-    .logo{
-    font-size: 30px;
-    }
-}
 #logo_menu {
     padding: 5px 0px;
 }
@@ -461,11 +456,14 @@ a:hover {
     
 }
 
+
+
 .mu-download-area .polo-btn{
 	width: 25%;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 80px;
     margin-left: 36%;
+    margin-bottom: 20%;
     color: #000;
     background-color: #827382;
     border-color:  #827382;
@@ -476,6 +474,22 @@ a:hover {
     background: #827382;
     border-color: #000;
     color: #fff; 
+}
+@media(min-width:150px){
+    .mu-download-area .polo-btn{
+    font-size: 20px;
+        display: inline;
+        padding: 17px 30px ;       
+    }
+}
+@media all and (max-width:400px){
+    .mu-download-area .polo-btn{
+        padding: 15px;
+        font-size: 15px;
+        position: relative;
+        right: 45px;
+        
+    }
 }
 
 .polo-btn i {
@@ -785,8 +799,20 @@ a:hover {
 
 /*480px*/
 
-@media all and (max-width: 480px) {
-    .btn-custom {
-    
+@media all and (max-width: 400px) {
+    .logo {
+        font-size: 25px;
     }
 }
+@media all and (max-width: 300px) {
+    .logo {
+        font-size: 20px;
+    }
+}
+@media all and (max-width:400px){
+    #banner .polo-btn{
+        position: relative;
+        left: 60%;
+    }
+}
+

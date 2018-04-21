@@ -273,6 +273,14 @@ a:hover {
     border-color: #817382;
     color: #fff;
 }
+.login{
+	font-size: 20px;
+	color: aliceblue;
+	position: relative;
+	top: 40px;
+	left: 250px;
+	z-index: 20;
+}
 
 /* ///////////////////////////////////////////////////////////////////// 
 //  06 - Banner
@@ -820,4 +828,5 @@ a:hover {
         margin-left: -18%;
     }
 }
+
 

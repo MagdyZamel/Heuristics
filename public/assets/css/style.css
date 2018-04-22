@@ -274,14 +274,18 @@ a:hover {
     color: #fff;
 }
 .login{
-	font-size: 20px;
+	
+	font-size: 23px;
 	color: aliceblue;
 	position: relative;
-	top: 40px;
-	left: 221px;
+	top: 45px;
+	left: 202px;
 	z-index: 20;
+	background: transparent;
 }
-
+.login:hover, .login:active , .login:focus ,.login:checked{
+	color: aliceblue;
+}
 /* ///////////////////////////////////////////////////////////////////// 
 //  06 - Banner
 /////////////////////////////////////////////////////////////////////*/
@@ -706,7 +710,37 @@ a:hover {
     font-size: 16px;
 
 }
-
+/* ////////////////////// modal ///////////////// */
+.modal-body img{
+	width: 10%;
+	margin-left: 45%;
+}
+.modal-body  label{
+	color: #827382;
+	margin-left: 45%;
+}
+.modal-body  input{
+	margin: auto;
+}
+.modal-body #Submit{
+	background-color:  #827382;
+	color: aliceblue;
+	border: 1px solid ;
+	border-radius: 30px;
+	height: 35px;
+	width: 20%;
+	font-size: 18px;
+    font-family: cu;
+}
+.modal-header .close {
+    margin-top: -30px;
+}
+.modal-header h5{
+text-align: center;
+color: #827382;
+font-family: cu;
+font-size: 23px;
+}
 /* ///////////////////////////////////////////////////////////////////// 
 //  14 - Responsive Fixes
 /////////////////////////////////////////////////////////////////////*/

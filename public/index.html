@@ -320,7 +320,7 @@
         <div class="modal-content">
             <div class="modal-header ">
                 <h5 class="modal-title section-header" id="ModalLabel"> LOGIN</h5>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" onclick="close()">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="form">
@@ -330,17 +330,17 @@
 						<img src="assets/img/app%20logo.png"><br> 
 					        </div>
                             <div class="form-group col-md-12">
-                                <input style="width: 50%;" type="email" name="name" class="form-control" id="modalName" placeholder="Your Email.." autocomplete="off" required    />
+                                <input style="width: 50%;" type="email" name="name" class="form-control" id="mail" placeholder="Your Email.." autocomplete="off" required    />
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group col-md-12">
-                                <input style="width: 50%;" type="password" class="form-control" name="email" placeholder="Your Password.." id="modalEmail"  autocomplete="off" required />
+                                <input style="width: 50%;" type="password" class="form-control" name="email" placeholder="Your Password.." id="pass"  autocomplete="off" required />
                                 <div class="validation"></div>
                             </div>
                         </div>
   
                         <div class="text-center">
-                          <button id ="Submit"  type="submit" class=" btnlog text-center" onclick="close()"> Login</button>
+                          <button id ="Submit"  type="submit" class=" btnlog text-center" onclick="login()"> Login</button>
                         </div>
                     </form>
                 </div>
@@ -364,6 +364,28 @@
 			$('#myModal').modal('hide')
 		}
 	</script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-messaging.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-functions.js"></script>
+
+	<!-- script of firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAsZHwRZECrNcLJmthInDpTPe7kUVEk6RU",
+		authDomain: "login-761bb.firebaseapp.com",
+		databaseURL: "https://login-761bb.firebaseio.com",
+		projectId: "login-761bb",
+		storageBucket: "",
+		messagingSenderId: "307794220264"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="assets/js/login.js"></script>
 	
 </body>
 </html>

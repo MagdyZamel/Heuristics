@@ -282,6 +282,7 @@ a:hover {
 	left: 202px;
 	z-index: 20;
 	background: transparent;
+	
 }
 .login:hover, .login:active , .login:focus ,.login:checked{
 	color: aliceblue;
@@ -711,6 +712,9 @@ a:hover {
 
 }
 /* ////////////////////// modal ///////////////// */
+.modal-content{
+	background-color:#F5EEF8;
+}
 .modal-body img{
 	width: 10%;
 	margin-left: 45%;

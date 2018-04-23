@@ -10,12 +10,12 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function login(){
-	
-	var userEmail = document.getElementById('mail').value;
-	var passWord = document.getElementById('pass').value;
-	
-	firebase.auth().signInWithEmailAndPassword(userEmail, passWord)
+jQuery(document).ready(function ($) {
+  "use strict";
+  $('form.modalForm').submit(function () {
+    var userEmail = $('#modal-window-container').find("#mail").val();
+    var passWord = $('#modal-window-container').find("#pass").val();
+		firebase.auth().signInWithEmailAndPassword(userEmail, passWord)
     .catch(function(error) {
 	  // Handle Errors here.
 	  var errorCode = error.code;
@@ -27,11 +27,6 @@ function login(){
 	  }
 	  console.log(error);
 	});
-	/*firebase.auth().signInWithEmailAndPassword(userEmail, passWord).catch(function(error) {
-	  // Handle Errors here.
-	  var errorCode = error.code;
-	  var errorMessage = error.message;
-		window.alert("Error :" + errorMessage);
-	  // ...
+	return false;
 	});
-*/
+});

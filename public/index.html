@@ -51,7 +51,7 @@
 			<section class="row" id="logo_menu">
 				
 				<section class="col-xs-8" style="top:25px;"><a class="logo" href=""> <span style="color: #2c3e50">H e u</span> r i s t i c</a></section>
-				<section class="col-xs-4"> <button type="button" class="btn login col-xs-4" data-toggle="modal" data-target="#myModal"><span style="color: #2c3e50">LO</span>GIN</button></section>
+				<section class="col-xs-4"> <button type="button" class="btn login col-xs-4" data-toggle="modal" data-target="#modal-window-container"><span style="color: #2c3e50">LO</span>GIN</button></section>
 				<section class="col-xs-4"><a id="menu-toggle" href="#" class="toggle wow rotateIn" data-wow-delay="1s"><i class="ion-navicon"></i></a></section>
 			</section>
 		</section>
@@ -314,7 +314,7 @@
 <!-- ***************************** MOdal **************************** -->
 	
 		<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+<div class="modal fade" id="modal-window-container" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true"  style="margin-top: 92px;">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -340,7 +340,7 @@
                         </div>
   
                         <div class="text-center">
-                          <button id ="Submit"  type="submit" class=" btnlog text-center" onclick="login()"> Login</button>
+                          <button id ="Submit"  type="submit" class=" btnlog text-center"> Login</button>
                         </div>
                     </form>
                 </div>
@@ -361,7 +361,7 @@
 	<script src="assets/js/script.js"></script>
 	<script>
 		function close(){
-			$('#myModal').modal('hide')
+			$('#modal-window-container').modal('hide')
 		}
 	</script>
 	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>

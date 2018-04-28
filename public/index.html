@@ -311,15 +311,14 @@
     </div>
 </footer><!-- #footer -->
 
-<!-- ***************************** MOdal **************************** -->
+<!-- ***************************** MOdal login **************************** --> 
 	
-		<!-- Modal -->
 <div class="modal fade" id="modal-window-container" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true"  style="margin-top: 92px;">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header ">
-                <h5 class="modal-title section-header" id="ModalLabel"> LOGIN</h5>
+                <h5 class="modal-title section-header" id="ModalLabel"> JOIN TO OUR GANG </h5>
                 <button type="button" class="close" data-dismiss="modal" onclick="close()">&times;</button>
             </div>
             <div class="modal-body">
@@ -337,10 +336,71 @@
                                 <input style="width: 50%;" type="password" class="form-control" name="email" placeholder="Your Password.." id="pass"  autocomplete="off" required />
                                 <div class="validation"></div>
                             </div>
+							 <div class="form-group col-md-12 text-center">
+                                <input type="button"  onclick="signup()" value="Forget Password.. ? " class="btnsignup" data-toggle="modal" data-target="#demo" data-dismiss="modal"/>
+                                <div class="validation"></div>
+                            </div>
                         </div>
-  
+  							<div class="row">
+                        <div class="text-center col-md-12">
+                          <button id ="Submit"  type="submit" class=" btnlog text-center" style="margin-right: 10px;"> Login</button>
+                          <button id ="Submit"  type="submit" class=" btnlog text-center" data-toggle="modal" data-target="#demo-1" data-dismiss="modal"> Sign Up</button>
+                        </div>
+						</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+	<!-- **********************************modal signup *******************************-->
+	<!-- Modal -->
+<div class="modal modal-window-container fade" id="demo-1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title section-header" id="ModalLabel" style=" color: #827382;">Join Heuristic Today</h5>
+                <button type="button" id = "close" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    
+                        <div id="errormessage"></div>
+        			<div class="form-group col-md-12 hidden-xs">
+						<img src="assets/img/mockup.png"><br> 
+					        </div>
+                    <form action="" method="post" role="form" class="modalForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="name">Full Name</label>
+                                <input type="text" name="name" class="form-control" id="modalName" placeholder="Your Name.." autocomplete="off" required/>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="name">User Name</label>
+                                <input type="text" class="form-control" name="username" placeholder="Your UserName.." id="modalusername"  autocomplete="off" required />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="email">Email Or Phone Number</label>
+                                <input type="text" name="mail"  class="form-control" id="modalEmail" placeholder="Your Email Or phone.."  autocomplete="off" required />
+                                <div class="validation"></div>
+                            </div>
+                          <div class="form-group col-md-12">
+                                <label for="password">Password</label>
+                                <input type="password" name="password"  class="form-control" id="modalpass" placeholder="Your Password.."  autocomplete="off" required />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+						
+                       
                         <div class="text-center">
-                          <button id ="Submit"  type="submit" class=" btnlog text-center"> Login</button>
+                          <button id ="Submitlo"  type="submit" class=" btnup text-center"> Sign Up</button>
                         </div>
                     </form>
                 </div>
@@ -350,6 +410,41 @@
 
 
 </div>
+	<!-- ***************************** MOdal forget **************************** --> 
+	
+<div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true"  style="margin-top: 92px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title section-header" id="ModalLabel"> Password Reset</h5>
+                <button type="button" class="close" data-dismiss="modal" onclick="close()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <form action="" method="post" role="form" class="modalForm">
+                        <div class="form-row" >
+							<div class="form-group col-md-12">
+						<img src="assets/img/app%20logo.png"><br> 
+					        </div>
+                            <div class="form-group col-md-12">
+                                <input style="width: 50%;" type="email" name="mail" class="form-control" id="email" placeholder="Your Email.." autocomplete="off" required    />
+                                <div class="validation"></div>
+                            </div>
+                            
+                        </div>
+  							<div class="row">
+                        <div class="text-center col-md-12">
+                          <button id ="Submit"  type="submit" class=" btnlog text-center" style="margin-right: 10px;"> Search</button>
+ 
+                        </div>
+						</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
 		
 	<!-- All the scripts -->
 
@@ -386,6 +481,7 @@
 	  firebase.initializeApp(config);
 	</script>
 	<script src="assets/js/login.js"></script>
+	
 	
 </body>
 </html>

@@ -714,6 +714,7 @@ a:hover {
 /* ////////////////////// modal ///////////////// */
 .modal-content{
 	background-color:#F5EEF8;
+	z-index: 99999999;
 }
 .modal-body img{
 	width: 10%;
@@ -735,6 +736,7 @@ a:hover {
 	width: 20%;
 	font-size: 18px;
     font-family: cu;
+	
 }
 .modal-header .close {
     margin-top: -30px;
@@ -744,6 +746,49 @@ text-align: center;
 color: #827382;
 font-family: cu;
 font-size: 23px;
+}
+.modal-body .btnsignup{
+	background-color: transparent;
+	color: #827382;
+	border: none;
+	
+}
+/* /////////////////////////////////////////////////////////
+      modal signup
+//////////////////////////*/
+#demo-1{
+	z-index: 9999999999999999999;
+}
+#demo-1 .modal-body label {
+	margin-left:0px;
+}
+#demo-1 .modal-body input{
+	width: 50%;
+	margin-left: 0px;
+}
+#demo-1 .btnup{
+	background-color:  #827382;
+	color: aliceblue;
+	border: 1px solid ;
+	border-radius: 30px;
+	height: 35px;
+	width: 20%;
+	font-size: 18px;
+    font-family: cu;
+	margin-right: 45%;
+}
+#demo-1 .modal-body img{
+	
+    width: 224px;
+    margin-left: 60%;
+    position: absolute;
+    top: 65px;
+    height: 284px;
+}
+#demo-1 .modal-content{
+	background-color: #F3F3F3;
+	margin-top: 15%;
+	margin-left: 5%;
 }
 /* ///////////////////////////////////////////////////////////////////// 
 //  14 - Responsive Fixes

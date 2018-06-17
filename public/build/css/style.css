@@ -1243,6 +1243,7 @@ only screen and (min-resolution: 125dpi) {
 	#download {
 		overflow:hidden;
 		background:#2c3e50
+		
 	}
 	#download article {
 		left: calc(50% - 148px);
@@ -2242,7 +2243,7 @@ only screen and (min-resolution: 125dpi) {
 	bottom:0;
 	left:0;
 	z-index:-1;
-opacity: 0.8;
+opacity: 0.3;
 }
 #illustration-01 div {
 	position:absolute;
@@ -2257,7 +2258,7 @@ opacity: 0.8;
 	z-index:100;
 	width:248px;
 	height:636px;
-	background-image:url("../../img/illustration/logo.png");
+	background-image:url("../../img/illustration/logo1x.png");
 	background-repeat: no-repeat;
 	transform:translate3d(-50%,
 	0,
@@ -2440,7 +2441,7 @@ only screen and (min-resolution: 125dpi) {
 		height:100%;
 		top:0;
 		right:auto;
-		background-image:url("../../img/illustration/logoo.png");
+		background-image:url("../../img/illustration/all_2x.png");
 		background-repeat:no-repeat;
 		background-size:100% auto!important;
 		opacity:.1
@@ -2457,7 +2458,7 @@ only screen and (max-width: 740px) and (min-resolution: 125dpi) {
 		height:100%;
 		top:0;
 		right:auto;
-		background-image:url("../../img/illustration/logoo.png");
+		background-image:url("../../img/illustration/all_2x.png");
 		background-size:375px 325px
 	}
 }

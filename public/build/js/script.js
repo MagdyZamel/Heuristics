@@ -144,7 +144,7 @@ function getTransitionValues() {
 		},
 		video: {
 			start: 0,
-			end: 2
+			end: 3
 		}
 	}, trValues[1] = {
 		stripe: {
@@ -195,8 +195,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 2,
-			end: 29
+			start: 3,
+			end: 15
 		}
 	}, trValues[2] = {
 		stripe: {
@@ -243,8 +243,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 29,
-			end: 38
+			start: 15,
+			end: 25
 		}
 	}, trValues[3] = {
 		stripe: {
@@ -291,8 +291,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 38,
-			end: 49
+			start: 25,
+			end: 33
 		}
 	}, trValues[4] = {
 		stripe: {
@@ -341,8 +341,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 49,
-			end: 53
+			start: 25,
+			end: 35
 		}
 	}, trValues[5] = {
 		stripe: {
@@ -391,8 +391,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 53,
-			end: 58
+			start: 35,
+			end: 38
 		}
 	}, trValues[6] = {
 		stripe: {
@@ -441,7 +441,7 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 58,
+			start: 37,
 			end: video.duration
 		}
 	}, trValues[7] = {

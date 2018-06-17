@@ -9,7 +9,7 @@ function initNavigation() {
 
 function Section(e) {
 	var t = this;
-	console.log(t);
+	
 	t.index = e,
 	 t.DOMel = $("section").eq(e),
 	  t.article = t.DOMel.find("article"),
@@ -19,8 +19,6 @@ function Section(e) {
 		0 === currentSection ? $body.removeClass("started") : $body.addClass("started"), $body.attr("data-forward", e), $body.attr("data-current-section", currentSection), listItems.removeClass("current"), $(".nav-btn").prop("disabled", !1), 0 === currentSection && $(".nav-btn.up").prop("disabled", !0), currentSection === sections.length - 1 && $(".nav-btn.down").prop("disabled", !0);
 		var n = e ? trValues[t.index].article.delay.forward : trValues[t.index].article.delay.backward;
 		if (i) {
-			console.log("tssssss");
-			console.log(i);
 
 			var r = stripe._gsTransform ? stripe._gsTransform.rotation : 0;
 			TweenMax.to(iPhone, trValues[t.index].iPhone.duration, trValues[t.index].iPhone.values), r / 180 % 2 !== 0 ? TweenMax.to(stripe, .5, {
@@ -43,8 +41,7 @@ function Section(e) {
 				}
 			})
 		} else{
-			console.log(this);
-			console.log("this is esbarta mosko ");
+		
  TweenMax.to(stripe, trValues[t.index].stripe.duration, trValues[t.index].stripe.values), TweenMax.to(iPhone, trValues[t.index].iPhone.duration, trValues[t.index].iPhone.values);}
 		TweenMax.to(timelineCtn, 0.4, {
 			delay: 0,
@@ -147,7 +144,7 @@ function getTransitionValues() {
 		},
 		video: {
 			start: 0,
-			end: 0
+			end: 2
 		}
 	}, trValues[1] = {
 		stripe: {
@@ -6234,7 +6231,7 @@ function (e, t) {
 			return a.version = e.version, Q.activate([a]), a
 		}, n = e._gsQueue) {
 			for (r = 0; n.length > r; r++) n[r]();
-			for (s in f) f[s].func || e.console.log("GSAP encountered missing dependency: com.greensock." + s)
+			for (s in f) f[s].func 
 		}
 		o = !1
 	}

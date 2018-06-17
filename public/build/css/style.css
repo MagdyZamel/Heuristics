@@ -155,10 +155,10 @@ url("../../fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"),
 url("../../fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg")
 }
 @font-face{font-family:Avenir-Next;font-weight:900;src:url("../../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1-.eot#iefix");src:url("../../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1-.eot#iefix") format("eot"),
-url("http://www.ginventory.co/fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2") format("woff2"),
+url("../../fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2") format("woff2"),
 url("../../fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),
-url("http://www.ginventory.co/fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),
-url("http://www.ginventory.co/fonts/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg")
+url("../../fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),
+url("../../fonts/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg")
 }
 .swiper-container {
 	margin:0 auto;
@@ -745,6 +745,7 @@ only screen and (max-width: 740px) and (min-resolution: 125dpi) {
 	top:calc(50% + 105px);
 
 }
+
 @media only screen and (min-width: 741px) {
 	/* body[data-current-section="0"] #sections-list li:first-child section:before {
 		transform:translate3d(0,
@@ -1695,7 +1696,7 @@ only screen and (min-resolution: 125dpi) {
 	
 	position:fixed;
 	top:50%;
-	left:0;
+	left:1%;
 	z-index:20;
 	width:100%;
 	text-align:center;
@@ -2256,7 +2257,7 @@ opacity: 0.8;
 	z-index:100;
 	width:248px;
 	height:636px;
-	background-image:url("../../img/illustration/loogoo.png");
+	background-image:url("../../img/illustration/logo.png");
 	background-repeat: no-repeat;
 	transform:translate3d(-50%,
 	0,
@@ -2269,7 +2270,7 @@ only screen and (min--moz-device-pixel-ratio: 1.3),
 only screen and (min-resolution: 1.3dppx),
 only screen and (min-resolution: 125dpi) {
 	#illustration-01 .bottle {
-		background-image:url("../../img/illustration/loogoo.png");
+		background-image:url("../../img/illustration/logo.png");
 		background-size:248px 636px
 	}
 }
@@ -2439,7 +2440,7 @@ only screen and (min-resolution: 125dpi) {
 		height:100%;
 		top:0;
 		right:auto;
-		background-image:url("../../img/illustration/loogoo.png");
+		background-image:url("../../img/illustration/logoo.png");
 		background-repeat:no-repeat;
 		background-size:100% auto!important;
 		opacity:.1
@@ -2456,7 +2457,7 @@ only screen and (max-width: 740px) and (min-resolution: 125dpi) {
 		height:100%;
 		top:0;
 		right:auto;
-		background-image:url("../../img/illustration/loogoo.png");
+		background-image:url("../../img/illustration/logoo.png");
 		background-size:375px 325px
 	}
 }
@@ -2515,7 +2516,8 @@ body[data-current-section="7"] #illustration-02 {
 }
 textarea:placeholder-shown{
 	padding-left: 18%;
-	padding-top: 1%
+	padding-top: 1%;
+	color:darkgray;
 }
 
 /* ////////////////////// modal ///////////////// */
@@ -2523,13 +2525,8 @@ textarea:placeholder-shown{
 	background-color:#FDFEFE;
 	width: 80%;
 	z-index: 99999999;
-margin-left: 10%;
-font-family: Avenir-Next, 
-	Helvetica Neue,
-	Helvetica,
-	Roboto, 
-	Arial,
-	sans-serif;
+ margin-left: 10%;
+ font-family:cu;
 }
 
 
@@ -2540,8 +2537,7 @@ font-family: Avenir-Next,
 }
 .modal-body input::placeholder{
 	color:darkgray;
-font-family: Avenir-Next, 	Helvetica Neue, 	Helvetica, 	Roboto, 	Arial, 	sans-serif;
-	font-weight: 900;
+font-family: cu;
 
 }
 .modal-body #Submit{
@@ -2551,30 +2547,29 @@ font-family: Avenir-Next, 	Helvetica Neue, 	Helvetica, 	Roboto, 	Arial, 	sans-se
 	height: 40px;
 	width: 70%;
 	font-size: 20px;
-	font-weight: 800;
 	border-radius: 50px;
-	font-family:Avenir-Next, 	Helvetica Neue, 	Helvetica, 	Roboto, 	Arial, 	sans-serif;
+	font-family:cu;
 }
 .modal-body textarea{
 	margin: auto;
 	border-radius: 23px;
-	font-family: Avenir-Next, 	Helvetica Neue, 	Helvetica, 	Roboto, 	Arial, 	sans-serif;
+	height: 80px;
+	font-family:cu;
 }
 
 .modal-body textarea:placeholder-shown{
-	color: darkgray;
+	color: darkgrey;
 	padding-left: 4%;
-	font-family: Avenir-Next, 	Helvetica Neue, 	Helvetica, 	Roboto, 	Arial, 	sans-serif;
+	font-family:cu;
 	color: darkgray;
-	font-weight: 900;
+	padding-top: 5%;
 }
 
 .modal-header h5{
 text-align: center;
 color: #2c3e50;
-font-family: Avenir-Next, 	Helvetica Neue, 	Helvetica, 	Roboto, 	Arial, 	sans-serif;
+font-family: cu;
 font-size: 20px;
-	font-weight: 600;
 	margin-left: 34%;
 }
 
@@ -2583,7 +2578,7 @@ font-size: 20px;
 	color: #827382;
 	font-size: 13px;
 	font-family: cu;
-	margin-top: %;
+	
 	
 }
 .modal-body .or {
@@ -2591,4 +2586,5 @@ font-size: 20px;
 	left: 30%;
 	top:15%;
 	margin-top: 5%;
+	font-family: cu;
 }

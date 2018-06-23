@@ -958,22 +958,22 @@ body[data-current-section="7"] #sections-list section:before {
 	transform:translateZ(0) rotate(90deg)
 }
 #slider-images span:first-child {
-	background:url("../../img/mockup/memo.png")
+	background:url("../../img/mockup/darts.jpg")
 }
 #slider-images span:nth-child(2) {
-	background:url("../../img/mockup/offers.png")
+	background:url("../../img/mockup/Reminder.jpg")
 }
 #slider-images span:nth-child(3) {
-	background:url("../../img/mockup/memo.png")
+	background:url("../../img/mockup/Nearby.jpg")
 }
 #slider-images span:nth-child(4) {
-	background:url("../../img/mockup/feedback.png")
+	background:url("../../img/mockup/memories.jpg")
 }
 #slider-images span:nth-child(5) {
-	background:url("../../img/mockup/feedback.png")
+	background:url("../../img/mockup/feedback.jpg")
 }
 #slider-images span:nth-child(6) {
-	background:url("../../img/mockup/feedback.png")
+	background:url("../../img/mockup/offers.jpg")
 }
 .slide-change #slider-images span {
 	transition:none

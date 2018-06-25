@@ -57,7 +57,7 @@ function Section(e) {
 						timelineCtn.addClass("glowing")
 					}
 				}), transitionTimer = setTimeout(function () {
-					transitioning = !1
+					transitioning = !3
 				}, 1500), t.index < sections.length - 1 && wW > 740 && ($(video).unbind("timeupdate"), setTimeout(function () {
 					video.currentTime = trValues[t.index].video.start, video.play(), $(video).bind("timeupdate", function () {
 						this.currentTime >= trValues[t.index].video.end && this.pause()
@@ -144,7 +144,7 @@ function getTransitionValues() {
 		},
 		video: {
 			start: 0,
-			end: 3
+			end: 1
 		}
 	}, trValues[1] = {
 		stripe: {
@@ -195,8 +195,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 3,
-			end: 15
+			start: 1,
+			end:52
 		}
 	}, trValues[2] = {
 		stripe: {
@@ -243,8 +243,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 15,
-			end: 25
+			start: 52,
+			end: 83
 		}
 	}, trValues[3] = {
 		stripe: {
@@ -291,8 +291,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 25,
-			end: 33
+			start: 83,
+			end: 122
 		}
 	}, trValues[4] = {
 		stripe: {
@@ -341,8 +341,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 25,
-			end: 35
+			start: 122,
+			end: 137
 		}
 	}, trValues[5] = {
 		stripe: {
@@ -391,8 +391,8 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 35,
-			end: 38
+			start: 137,
+			end: 181
 		}
 	}, trValues[6] = {
 		stripe: {
@@ -441,7 +441,7 @@ function getTransitionValues() {
 			}
 		},
 		video: {
-			start: 37,
+			start: 181,
 			end: video.duration
 		}
 	}, trValues[7] = {

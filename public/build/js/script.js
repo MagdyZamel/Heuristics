@@ -442,7 +442,7 @@ function getTransitionValues() {
 		},
 		video: {
 			start: 181,
-			end: video.duration
+			end: video.duration -5
 		}
 	}, trValues[7] = {
 		stripe: {
